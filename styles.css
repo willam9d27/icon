@@ -1,66 +1,80 @@
 body{
-margin:0;
-font-family:Arial;
-background-color: antiquewhite;
+    margin:0;
+    font-family:Arial;
+    background-color: antiquewhite;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 40px;
-position:fixed;
-width:100%;
-background:rgb(199, 192, 60);
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
-z-index:10;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    position:fixed;
+    width:98%;
+    background:rgb(199, 192, 60);
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    z-index:10;
 }
+
 
 nav a{
-margin-left:20px;
-text-decoration:none;
-color:black;
-font-weight:bold;
+    margin-left:20px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    transition:0.3s;
 }
+
+nav a:hover{
+    color:saddlebrown;
+    background-color:whitesmoke;
+    padding:5px 10px;
+    border-radius:10px;
+    box-shadow:2px 2px 5px black;
+}
+
 
 section.home{
-height:800px;
-background-image:url("produk.png");
-background-size:cover;
-background-attachment:fixed;
-display:flex;
-justify-content:center;
-align-items:center;
-}
-
-.kotakbiotek{
-text-align:center;
-background:#f1f080cc;
-padding:20px;
-border-radius:10px;
-}
-
-.namabiotek{
-font-size:40px;
-margin:0;
+    height:800px;
+    background-image:url("produk.png");
+    background-size:cover;
+    background-attachment:fixed;
+    display:flex;
+    justify-content:flex-start; 
+    align-items:center;
+    padding-left:80px; 
 }
 
 .deskbiotek{
-margin:10px 0;
+    padding:40px;
+    width:500px;
+    background-color:white;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.namabiotek{
+    font-size:40px;
+    margin:0;
 }
 
 .kotakbiotek img{
-width:200px;
+    width:200px;
 }
+
 
 section.project{
     padding:100px 20px;
     text-align:center;
+    border-radius: 20px;
 }
+
+
 
 .fotoProject{
     position:relative;
@@ -73,16 +87,6 @@ section.project{
     border-radius:10px;
 }
 
-.textProject{
-    position:absolute;
-    bottom:20px;
-    left:20px;
-    right:20px;
-    color:white;
-    background:rgba(255, 237, 137, 0.6);
-    padding:10px;
-    border-radius:5px;
-}
 
 section.howto{
     padding:100px 40px;
@@ -93,6 +97,7 @@ section.howto{
     width:300px;
     margin-top:20px;
 }
+
 
 section.profile{
     padding:100px 20px;
@@ -110,19 +115,19 @@ section.profile{
 }
 
 .imgProfile img{
-width:100%;
+    width:100%;
 }
 
 .deskProfile{
-padding:10px;
+    padding:10px;
 }
 
 .medsos{
-padding:10px;
+    padding:10px;
 }
 
 .medsos a{
-margin:0 10px;
-color:rgb(255, 255, 255);
-font-size:20px;
+    margin:0 10px;
+    color:white;
+    font-size:20px;
 }
